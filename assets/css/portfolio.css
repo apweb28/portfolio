@@ -605,6 +605,9 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  @media (max-width:768px) {
+    margin-top:20px;
+  }
 }
 
 .no-gutters {
@@ -11514,6 +11517,11 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  @media (max-width:768px) {
+    height: 40vw;
+    min-height: 500px;
+    background-position: right;
+  }
 }
 
 .header .container {
@@ -11616,6 +11624,9 @@ pre .code {
 .about-section .about-card {
   padding: 60px;
   border-right: 1px solid #dee2e6;
+  @media (max-width:768px) {
+    padding: 20px;
+  }
 }
 
 .about-section .about-card:last-child {
