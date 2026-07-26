@@ -10,7 +10,7 @@ export const rightNavLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
-export const heroRoles = ['Web Developer', 'UI / UX Designer', 'CMS Developer'];
+export const heroRoles = ['CMS Developer', 'Web Developer', 'UI / UX Designer'];
 
 export const skills = [
   'HTML', 'CSS', 'JS', 'REACT', 'PHP',

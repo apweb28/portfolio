@@ -1,9 +1,5 @@
 import { useEffect, useState } from 'react';
-
-/**
- * Adds the "sticky" state once the user scrolls past the hero section
- * (mirrors the original `.site-header.sticky` toggle behaviour).
- */
+ 
 export function useStickyHeader(heroRef) {
   const [isSticky, setIsSticky] = useState(false);
 

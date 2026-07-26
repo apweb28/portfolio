@@ -9,11 +9,6 @@ function getVisibleCards() {
   return 3;
 }
 
-/**
- * Drives the testimonials carousel: responsive visible-card count,
- * dot navigation, and autoplay - ported from the original vanilla
- * track/dots slider.
- */
 export function useTestimonialSlider(itemCount) {
   const trackRef = useRef(null);
   const firstCardRef = useRef(null);

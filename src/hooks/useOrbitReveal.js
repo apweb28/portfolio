@@ -3,12 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const GROW_START_RATIO = 0.9;
 const GROW_END_RATIO = 0.35;
 const MIN_SCALE = 10 / 155;
-
-/**
- * Scales the "sun" illustration up and reveals the orbit rings/stars as
- * the About section scrolls into view, matching the original inline
- * "SOLAR ORBIT" animation.
- */
+ 
 export function useOrbitReveal() {
   const wrapperRef = useRef(null);
   const sunRef = useRef(null);

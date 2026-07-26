@@ -1,15 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 const TRIGGER_RATIO = 0.8;
-
-/**
- * Splits the referenced element's text into per-word spans and toggles
- * an `is-active` class as each word crosses the trigger line on scroll.
- * Matches the working "about text" reveal from the original markup
- * (the separate letter-by-letter version was dead code - it built
- * `.letter` spans that got immediately overwritten by this same
- * word-splitting script, so only this behaviour ever rendered).
- */
+  
 export function useWordReveal(text) {
   const containerRef = useRef(null);
 
