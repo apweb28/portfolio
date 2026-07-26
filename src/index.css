@@ -1029,12 +1029,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
 span.swiper-pagination-bullet{
     background:#e1dcc9e0!important;
 }
-
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: -8%;
 }
 
+
 @media (max-width:768px){
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 0%;
+    }
     .project-card{
         grid-template-columns:1fr;
     }
