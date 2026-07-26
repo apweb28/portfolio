@@ -17,7 +17,7 @@ export default function Navbar({ isSticky, isMenuOpen, onToggleMenu }) {
 
           <div className="logo-wrapper">
             <div className="logo">
-              <img src="/images/logo.png" alt="AP Logo" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="AP Logo" />
             </div>
           </div>
 

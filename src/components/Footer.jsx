@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container footer-wrapper">
         <div className="footer-about">
           <a href="#" className="footer-logo">
-            <img src="/images/logo.png" alt="Logo" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Logo" />
           </a>
           <p>
             We build high-quality websites that are modern, fast, responsive, and optimized for
