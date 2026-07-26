@@ -373,8 +373,8 @@ p {
     .right-menu{
         display:none;
     }
-    .mobile-toggle{
-    }
+    /* .mobile-toggle{
+    } */
     .logo{
         position:absolute;
         left:10px;
@@ -405,8 +405,8 @@ p {
         width:55px;
         height:55px;
     }
-    .mobile-toggle span{
-    }
+    /* .mobile-toggle span{
+    } */
 }
 
 /* =========================
@@ -873,7 +873,7 @@ body.is-loading {
 .service-icon{
     font-size:2rem;
     color:var(--color-cream);
-    margin-bottom:1.25rem;
+    /* margin-bottom:1.25rem; */
 }
 
 /* Title */
