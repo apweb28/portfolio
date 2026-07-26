@@ -19,9 +19,9 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            {quickLinks.map((label) => (
-              <li key={label}>
-                <a href="#">{label}</a>
+            {quickLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
               </li>
             ))}
           </ul>

@@ -1475,3 +1475,6 @@ svg.swiper-navigation-icon path{
   opacity: 1;
   background: var(--your-accent-color);
 }
+.projects-section .swiper{
+    padding-bottom: 1rem!important;
+}
