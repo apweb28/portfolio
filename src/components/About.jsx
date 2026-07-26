@@ -2,9 +2,7 @@ import { useWordReveal } from '../hooks/useWordReveal.js';
 import { useOrbitReveal } from '../hooks/useOrbitReveal.js';
 import AboutIllustration from './icons/AboutIllustration.jsx';
 
-const ABOUT_TEXT = `Website Developer passionate about creating modern web experiences.
-I combine technical skills, creativity, and continuous learning
-to deliver high-quality solutions that make an impact.`;
+const ABOUT_TEXT = `Web Developer with 2.5+ years of experience building modern web experiences — from CMS-based sites on Shopify, WordPress, and Webflow to custom front-end builds with React and JavaScript. I care about performance, SEO, and clean, functional design in everything I build.`;
 
 export default function About() {
   const textRef = useWordReveal(ABOUT_TEXT);
