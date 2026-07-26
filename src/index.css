@@ -1050,6 +1050,9 @@ span.swiper-pagination-bullet{
     .swiper .swiper-button-next, .swiper .swiper-button-prev{
         top: var(--swiper-navigation-top-offset, 50%)!important;
     }
+    .service-icon svg{
+        width: 40px!important;
+    }
 }
 
 .projects-section .container{
