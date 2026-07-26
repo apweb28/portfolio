@@ -11,8 +11,7 @@ export default function Footer() {
             <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Logo" />
           </a>
           <p>
-            We build high-quality websites that are modern, fast, responsive, and optimized for
-            businesses looking to grow online.
+             I build modern, fast, responsive websites that help businesses grow online.
           </p>
         </div>
 
