@@ -880,7 +880,7 @@ body.is-loading {
 
 .service-card h3{
     color:var(--color-cream);
-    margin-bottom:1rem;
+    margin-bottom:0.5rem;
     font-size:1.35rem;
 }
 
@@ -890,6 +890,7 @@ body.is-loading {
     color:rgba(225,220,201,.85);
     line-height:var(--body-line-height);
     font-size:1rem;
+    margin-top: 0!important;
 }
 
 @media (max-width:991px){
