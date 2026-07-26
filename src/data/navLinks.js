@@ -1,5 +1,5 @@
 export const leftNavLinks = [
-  { href: '#hero', label: 'Home', active: true },
+  { href: '#hero', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#services', label: 'Services' },
 ];

@@ -1,6 +1,12 @@
 import { leftNavLinks, rightNavLinks } from '../data/navLinks.js';
+import { useActiveSection } from '../hooks/useActiveSection.js';
+
+const allLinks = [...leftNavLinks, ...rightNavLinks];
+const sectionIds = allLinks.map((link) => link.href.slice(1));
 
 export default function Navbar({ isSticky, isMenuOpen, onToggleMenu }) {
+  const activeId = useActiveSection(sectionIds);
+
   return (
     <header className={`site-header${isSticky ? ' sticky' : ''}`}>
       <div className="container">
@@ -8,7 +14,10 @@ export default function Navbar({ isSticky, isMenuOpen, onToggleMenu }) {
           <ul className="nav-menu left-menu">
             {leftNavLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className={link.active ? 'active' : undefined}>
+                <a
+                  href={link.href}
+                  className={activeId === link.href.slice(1) ? 'active' : undefined}
+                >
                   {link.label}
                 </a>
               </li>
@@ -24,7 +33,12 @@ export default function Navbar({ isSticky, isMenuOpen, onToggleMenu }) {
           <ul className="nav-menu right-menu">
             {rightNavLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                <a
+                  href={link.href}
+                  className={activeId === link.href.slice(1) ? 'active' : undefined}
+                >
+                  {link.label}
+                </a>
               </li>
             ))}
           </ul>
