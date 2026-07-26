@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { projects } from '../data/projects.js';
 
 export default function Projects() {
@@ -14,11 +14,11 @@ export default function Projects() {
 
         <Swiper
           className="swiper projects-slider"
-          modules={[Navigation, Autoplay]}
+          modules={[Pagination, Autoplay]}
           loop
           speed={800}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
-          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+          pagination={{ el: '.swiper-pagination', clickable: true }}
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
@@ -37,8 +37,7 @@ export default function Projects() {
           ))}
         </Swiper>
 
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        <div className="swiper-pagination"></div>
       </div>
     </section>
   );

@@ -1466,3 +1466,12 @@ svg.swiper-navigation-icon path{
     transform: translateX(2px);
     fill: #E1DCC9!important;
 }
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--your-accent-color);
+}
