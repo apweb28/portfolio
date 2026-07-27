@@ -301,7 +301,7 @@ p {
         left: 0;
         right: 0;
         border-radius: 20px 20px 0 0;
-        padding: 10px;
+        padding: 10px 10px 0 10px;
         z-index: 1000;
         box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
     }
