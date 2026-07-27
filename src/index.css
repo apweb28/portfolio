@@ -307,7 +307,7 @@ p {
     }
     .navbar.menu-open .right-menu {
         position: absolute;
-        top: calc(100% + 165px); /* Position right below the left-menu */
+        top: calc(100% + 175px); /* Position right below the left-menu */
         left: 0;
         right: 0;
         border-radius: 0 0 20px 20px;
